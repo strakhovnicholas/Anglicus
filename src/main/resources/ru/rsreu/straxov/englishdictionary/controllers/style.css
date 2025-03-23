@@ -1,0 +1,305 @@
+.hbox-clickable {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-transition: all 0.2s ease;
+}
+
+/* Анимация при наведении */
+.hbox-clickable:hover {
+    -fx-background-color: #e8e8e8;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* Анимация при нажатии */
+.hbox-clickable:pressed {
+    -fx-background-color: #dcdcdc;
+    -fx-translate-y: 3px; /* Смещение вниз */
+}
+
+#buttonAddWord {
+    -fx-background-color: #0303FF; /* Синий фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-font-size: 40px; /* Размер текста */
+    -fx-font-weight: bold; /* Жирный текст */
+    -fx-background-radius: 40px; /* Радиус для создания круга */
+    -fx-border-radius: 40px; /* Радиус границ */
+}
+
+/* Эффект при наведении */
+#buttonAddWord:hover {
+    -fx-background-color: #000099; /* Более темный синий */
+    -fx-cursor: hand; /* Указатель мыши */
+}
+
+/* Эффект при нажатии */
+#buttonAddWord:pressed {
+    -fx-background-color: #004494; /* Темный синий */
+    -fx-translate-y: 2px; /* Смещение вниз */
+}
+
+
+/* Стили для основного ScrollPane с fx:id="mainScrollPane" */
+#mainScrollPane {
+    -fx-background-color:  white; /* Светлый фон */
+    -fx-border-color: white;
+}
+
+#mainScrollPane .scroll-bar {
+    -fx-opacity: 0; /* Невидимый ScrollBar */
+}
+
+#mainScrollPane .viewport {
+    -fx-background-color: white; /* Устанавливает белый фон для области содержимого */
+}
+
+
+/* Стили для AnchorPane с fx:id="mainAnchorPane" */
+#mainAnchorPane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+}
+
+/* Стили для кнопки "similarWordsFoundButton" */
+#similarWordsFoundButton {
+    -fx-background-color: white; /* Белый фон */
+    -fx-text-fill: black; /* Цвет текста */
+    -fx-font-size: 16px; /* Размер шрифта */
+    -fx-border-radius: 5; /* Скругленные углы */
+    -fx-background-radius: 5;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-padding: 5 10 5 10;
+}
+
+/* Смена цвета кнопки при наведении (hover) */
+#similarWordsFoundButton:hover {
+    -fx-background-color: #f0f0f0; /* Серый цвет при наведении */
+    -fx-border-color: darkgray;
+    -fx-cursor: hand; /* Указатель мыши */
+}
+
+/* Стили для текстового поля tbWord */
+#tbWord {
+    -fx-background-color: #FAFAFA; /* Светлый фон */
+    -fx-text-fill: #000099; /* Цвет текста */
+    -fx-border-color: #FAFAFA;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-font-size: 23px;
+    -fx-padding: 5 10 5 10;
+}
+
+#tbWord:focused {
+    -fx-border-color: #FAFAFA; /* Голубая обводка при фокусе */
+    -fx-background-color: #FAFAFA;
+}
+
+/* Стили для текстового поля tbTranscription */
+#tbTranscription {
+    -fx-background-color: #FAFAFA; /* Светлый фон */
+    -fx-text-fill: #000099; /* Цвет текста */
+    -fx-border-color: #FAFAFA;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-font-size: 23px;
+    -fx-padding: 5 10 5 10;
+}
+
+#tbTranscription:focused {
+    -fx-border-color: #FAFAFA; /* Голубая обводка при фокусе */
+    -fx-background-color: #FAFAFA;
+}
+
+/* Стили для TextArea taMeaning */
+/* Для скрытия вертикальной и горизонтальной полос прокрутки */
+#taMeaning {
+    -fx-background-color: #FAFAFA; /* Белый фон */
+    -fx-text-fill: #000099; /* Цвет текста */
+    -fx-border-color: #FAFAFA; /* Полностью убрать рамку */
+    -fx-border-radius: 40; /* Скругление рамки */
+    -fx-background-radius: 40; /* Скругление фона */
+    -fx-font-size: 23px;
+    -fx-padding: 10 20 10 20;
+    -fx-focus-color: #FAFAFA; /* Убираем цвет при фокусе */
+    -fx-faint-focus-color: #FAFAFA; /* Убираем слабую обводку */
+
+}
+
+/* Убираем полосы прокрутки */
+#taMeaning .scroll-bar {
+    -fx-opacity: 0; /* Сделать полосы прокрутки прозрачными */
+    -fx-background-color: #F0F0F0; /* Прозрачный фон для полос прокрутки */
+}
+
+/* Для скрытия только вертикальной полосы прокрутки */
+#taMeaning .scroll-bar:vertical {
+    -fx-opacity: 0; /* Сделать вертикальную полосу прокрутки прозрачной */
+    -fx-background-color: #F0F0F0; /* Прозрачный фон */
+}
+
+/* Для скрытия только горизонтальной полосы прокрутки */
+#taMeaning .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Сделать горизонтальную полосу прокрутки прозрачной */
+    -fx-background-color: #F0F0F0; /* Прозрачный фон */
+}
+
+
+#scrollPanePictures {
+    -fx-background-color: white; /* Светлый фон */
+}
+
+#scrollPanePictures .scroll-bar {
+    -fx-opacity: 0; /* Невидимый ScrollBar */
+}
+
+
+#hBoxPictures {
+    -fx-background-color: #F0F0F0;
+}
+
+/* Стили для кнопки addOwnPictureButton */
+#addOwnPictureButton,
+#getBackButton,
+#soundButton
+{
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#addOwnPictureButton:hover,
+#getBackButton:hover,
+#soundButton:hover
+{
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #f0f0f0;
+    -fx-cursor: hand;
+}
+
+#getBackButton:pressed,
+#addOwnPictureButton:pressed,
+#soundButton:pressed
+{
+    -fx-opacity: 0.7; /* Становится прозрачнее */
+    -fx-effect: dropshadow(gaussian, gray, 20, 0.5, 0, 0); /* Добавляет тень */
+    -fx-scale-x: 0.95; /* Уменьшение масштаба */
+    -fx-scale-y: 0.95;
+}
+
+/* Стили для кнопки saveWordButton */
+#saveWordButton {
+    -fx-background-color: #0303FF; /* Зеленый фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+#saveWordButton:hover {
+    -fx-background-color: #000099; /* Более темный зеленый при наведении */
+    -fx-cursor: hand;
+}
+
+
+#scrollPainWords{
+    -fx-border-color: white;
+    -fx-background: white;
+}
+#scrollPainWords:focused
+{
+    -fx-border-color: transparent; /* Убирает рамку */
+    -fx-background-color: white; /* Сохраняет белый фон */
+}
+#scrollPainWords .scroll-bar {
+    -fx-opacity: 0; /* Невидимый ScrollBar */
+}
+
+#scrollPainWords .viewport {
+    -fx-background-color: white; /* Устанавливает белый фон для области содержимого */
+}
+
+#wordsContainer {
+    -fx-background-color: white; /* Белый фон */
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+}
+
+#anchorPane
+{
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+/* Стили для TitledPane */
+.titled-pane {
+    -fx-background-color: white; /* Белый фон */
+    -fx-border-color: white; /* Убираем границы */
+    -fx-border-radius: 30px; /* Закругленные границы */
+    -fx-background-radius: 30px; /* Закругленный фон */
+}
+
+/* Стили для заголовка TitledPane */
+.titled-pane > .title {
+    -fx-font-size: 23px; /* Размер текста заголовка */
+    -fx-font-weight: bold; /* Жирный текст */
+    -fx-padding: 10px; /* Отступы внутри заголовка */
+    -fx-background-color: #FAFAFA; /* Белый фон для заголовка */
+    -fx-border-color: #FAFAFA;
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px; /* Закругленные углы заголовка */
+}
+
+/* Стили для содержимого TitledPane */
+.titled-pane > .content {
+    -fx-background-color: #FAFAFA; /* Белый фон для содержимого */
+    -fx-border-color: #FAFAFA; /* Убираем границы */
+    -fx-border-radius: 40px; /* Закругленные углы */
+    -fx-background-radius: 40px; /* Закругленный фон */
+    -fx-font-size: 23px;             /* Размер шрифта */
+    -fx-padding: 0 0 0 20;
+}
+
+
+
+#optionsButton
+{
+    -fx-background-color: #0303FF; /* Зеленый фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+#optionsButton:hover {
+    -fx-background-color: #000099; /* Более темный зеленый при наведении */
+    -fx-cursor: hand;
+}
+
+.chart-title {
+    -fx-font-size: 30px; /* Размер шрифта */
+    -fx-text-fill: #0303FF; /* Оранжевый цвет текста */
+    -fx-padding: 10; /* Отступы */
+    -fx-font-family: "Britannic Bold"; /* Стиль шрифта */
+}
+
+.chart-pie-label {
+    -fx-font-size: 14px; /* Размер шрифта */
+    -fx-font-family: "Britannic Bold"; /* Шрифт */
+    -fx-text-fill:  #0303FF; /* Черный текст */
+    -fx-background-color: white; /* Полупрозрачный фон */
+    -fx-padding: 2 5 2 5; /* Отступы вокруг текста */
+    -fx-border-color: white; /* Граница вокруг лейблов */
+    -fx-border-radius: 5; /* Закругление границ */
+}
+
+
+
+
