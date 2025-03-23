@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1209.0" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.rsreu.straxov.englishdictionary.controllers.GraphController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="255.0" layoutY="100.0" prefHeight="700.0" prefWidth="700.0" />
+
+      <Button fx:id="getBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#getBackToDictionary" prefHeight="53.0" prefWidth="53.0" />
+      <ImageView fx:id="imgVwBack" disable="true" fitHeight="56.0" fitWidth="56.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../cancel.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

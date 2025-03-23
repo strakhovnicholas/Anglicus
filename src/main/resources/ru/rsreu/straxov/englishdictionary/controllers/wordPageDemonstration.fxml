@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="mainScrollPane" hbarPolicy="NEVER" hmax="0.0" prefHeight="1039.0" prefWidth="1209.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.rsreu.straxov.englishdictionary.controllers.WordDemonstrationController">
+    <content>
+        <AnchorPane fx:id="mainAnchorPane" blendMode="MULTIPLY" prefHeight="1039.0" prefWidth="1209.0">
+            <children>
+                <ImageView fitHeight="230.0" fitWidth="241.0" layoutX="656.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../map.png" />
+                    </image>
+                </ImageView>
+                <ImageView disable="true" fitHeight="137.0" fitWidth="129.0" layoutX="423.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../statue.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="tbWord" focusTraversable="false" layoutX="14.0" layoutY="90.0" prefHeight="50.0" prefWidth="538.0" promptText="Word">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tbTranscription" editable="false" focusTraversable="false" layoutX="14.0" layoutY="164.0" prefHeight="50.0" prefWidth="538.0" promptText="Transcription">
+                    <font>
+                        <Font size="23.0" />
+                    </font></TextField>
+                <Button fx:id="soundButton" layoutX="562.0" layoutY="177.0" minHeight="15.0" mnemonicParsing="false" onAction="#pronounce" prefHeight="23.0" prefWidth="31.0" />
+                <TextArea fx:id="taMeaning" focusTraversable="false" layoutX="14.0" layoutY="231.0" prefHeight="612.0" prefWidth="1102.0" promptText="Meanings" scrollLeft="-10.0" wrapText="true">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                    <rotationAxis>
+                        <Point3D />
+                    </rotationAxis>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor></TextArea>
+                <ImageView fx:id="wheel" fitHeight="35.0" fitWidth="38.0" layoutX="515.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@../wheel.png" />
+                    </image>
+                </ImageView>
+                <ScrollPane fx:id="scrollPanePictures" hbarPolicy="ALWAYS" layoutX="14.0" layoutY="866.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="165.0" prefWidth="1103.0" vbarPolicy="NEVER" vmax="0.0">
+                    <content>
+                        <HBox fx:id="hBoxPictures" prefHeight="165.0" prefWidth="1103.0" spacing="10.0" style="-fx-background-color: white;">
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                        </HBox>
+                    </content>
+                </ScrollPane>
+                <Button fx:id="getBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#getBackToDictionary" prefHeight="53.0" prefWidth="53.0" />
+                <ImageView fx:id="imgVwBack" disable="true" fitHeight="56.0" fitWidth="56.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../cancel.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgVwPronounce" disable="true" fitHeight="56.0" fitWidth="56.0" layoutX="562.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../sound.png" />
+                    </image>
+                </ImageView>
+                <ImageView disable="true" fitHeight="181.0" fitWidth="184.0" layoutX="1105.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../soldier.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="85.0" fitWidth="124.0" layoutX="1080.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+                    <image>
+                        <Image url="@../teapot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1041.0" layoutY="730.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../plane.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
